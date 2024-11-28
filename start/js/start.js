@@ -4,7 +4,14 @@ const qna = document.querySelector("#qna");
 function addAnswer(answerText, qIdx){
     var a = document.querySelector('.answerBox');
     var answer = document.createElement('button');
+
     answer.classList.add('answerList');
+    answer.classList.add('my-3');
+    answer.classList.add('py-3');
+    answer.classList.add('mx-auto');
+    answer.classList.add('fadeIn');
+    //answer.classList.add('fadeOut');
+    
     a.appendChild(answer);
     answer.innerHTML = answerText;
 
@@ -12,9 +19,16 @@ function addAnswer(answerText, qIdx){
         var childern = document.querySelectorAll('.answerList');
         for(let i = 0; i < childern.length; i++){
             childern[i].disabled = true;
-            childern[i].style.display = 'none';
+            childern[i].style.WebkitAnimation = "fadeOut 0.5s";
+            childern[i].style.animation = "fadeOut 0.5s";
         }
-        goNext(++qIdx);
+
+        setTimeout(()=>{
+            for(let i = 0; i < childern.length; i++){
+                childern[i].style.display = 'none';
+            }
+            goNext(++qIdx);
+        }, 450)
     },false);
 }
 
