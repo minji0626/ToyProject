@@ -3,26 +3,44 @@
 }
 
 .qBox{
-    background-color: #f2f2f2;
+    background-color: #fdfdfd;
     text-align: center;
     border-radius: 20px;
     font-size: 24px;
     width: 80%;
+    align-content: center;
+    height: 150px;
 }
 
 .answerList{
-    background-color: #f2f2f2;
+    height: 85px;
+    background-color: #fdfdfd;
     border-radius: 20px;
     text-align: center;
     display: block;
     width: 80%;
     border: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .answerList:hover , .answerList:focus{
-    background-color: #f8daef;
+    background-color: #f8daefc5;
     font-weight: 500;
     font-size: 20px;
+}
+
+.status{
+    height: 10px;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.statusBar{
+    height: 100%;
+    border-radius: 20px;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcecfc+0,fd89d7+62,fd89d7+62,fd89d7+66,fd89d7+66,ff7cd8+100 */
+    background: linear-gradient(to bottom,  #fcecfc 0%,#fd89d7 62%,#fd89d7 62%,#fd89d7 66%,#fd89d7 66%,#ff7cd8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
